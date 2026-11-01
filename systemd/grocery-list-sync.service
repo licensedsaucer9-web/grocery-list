@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync grocery list from Notion to GitHub Pages
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Optional so a missing file surfaces as the sync's own "NOTION_TOKEN missing".
+EnvironmentFile=-%h/.config/grocery-list/env
+ExecStart=%h/.local/grocery-list/run-sync.sh
+TimeoutStartSec=5min

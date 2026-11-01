@@ -1,0 +1,49 @@
+# Manual fallback for when the systemd timer on joakimarchy cannot run.
+# Kept workflow_dispatch-only so it never double-commits with the timer.
+name: sync (manual fallback)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Sync from Notion
+        run: npm run --silent sync
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      - name: Commit and push if changed
+        id: commit
+        run: |
+          git add public/list.json
+          if git diff --cached --quiet -- public/list.json; then
+            echo "list.json unchanged"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          week=$(node -e 'console.log(JSON.parse(require("fs").readFileSync("public/list.json","utf8")).week_start)')
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync list (week $week)" -- public/list.json
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      # Pushes made with GITHUB_TOKEN do not trigger other workflows.
+      - name: Deploy Pages
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
