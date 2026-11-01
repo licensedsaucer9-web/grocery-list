@@ -33,22 +33,33 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// list.json: network first, fall back to the last copy. Stored under the
-// clean URL so cache-busting ?t= queries still update and hit it.
+// list.json: network first, fall back to the last copy on a network error or
+// an HTTP error. Stored under the clean URL so cache-busting ?t= queries
+// still update and hit it.
 async function listFirstNetwork(request) {
   const cache = await caches.open(DATA_CACHE);
+  let res;
   try {
-    const res = await fetch(request);
-    if (res.ok) await cache.put(LIST_URL, res.clone());
-    return res;
+    res = await fetch(request);
   } catch (err) {
-    const cached = await cache.match(LIST_URL);
-    if (!cached) throw err;
-    // Mark it so the page can tell the user this is the saved copy.
-    const headers = new Headers(cached.headers);
-    headers.set('X-Grocery-Offline', '1');
-    return new Response(cached.body, { status: cached.status, statusText: cached.statusText, headers });
+    const fallback = await savedList(cache);
+    if (!fallback) throw err;
+    return fallback;
   }
+  if (res.ok) {
+    await cache.put(LIST_URL, res.clone());
+    return res;
+  }
+  return (await savedList(cache)) ?? res;
+}
+
+async function savedList(cache) {
+  const cached = await cache.match(LIST_URL);
+  if (!cached) return undefined;
+  // Mark it so the page can tell the user this is the saved copy.
+  const headers = new Headers(cached.headers);
+  headers.set('X-Grocery-Offline', '1');
+  return new Response(cached.body, { status: cached.status, statusText: cached.statusText, headers });
 }
 
 async function shellCacheFirst(request) {
