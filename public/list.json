@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "week_start": "2026-10-26",
+  "synced_at": "2026-11-01T13:50:35Z",
+  "list_hash": "cbb5642222ea65c7",
+  "sections": [
+    {
+      "id": "dairy",
+      "title": "Dairy",
+      "items": [
+        {
+          "id": "817a000d000000000000000000000000",
+          "name": "Tine Lettmelk 1,5 l",
+          "pack": "1,5 l",
+          "price": 24.9,
+          "unit_price": 16.6,
+          "unit": "kr/l",
+          "chain": "Kiwi",
+          "discount": "-20%",
+          "member": false,
+          "note": "Max 4 per kunde"
+        }
+      ]
+    },
+    {
+      "id": "produce",
+      "title": "Produce",
+      "items": [
+        {
+          "id": "817a000f000000000000000000000000",
+          "name": "Bananer",
+          "pack": null,
+          "price": 19.9,
+          "unit_price": 19.9,
+          "unit": "kr/kg",
+          "chain": "Rema 1000, Meny",
+          "discount": null,
+          "member": false,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "protein",
+      "title": "Protein",
+      "items": [
+        {
+          "id": "817a000e000000000000000000000000",
+          "name": "Kyllingfilet 1 kg",
+          "pack": "1 kg",
+          "price": 99,
+          "unit_price": 99,
+          "unit": "kr/kg",
+          "chain": "Coop Extra",
+          "discount": "-30%",
+          "member": true,
+          "note": "Coop-medlem"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "title": "Other",
+      "items": [
+        {
+          "id": "817a0010000000000000000000000000",
+          "name": "Avokado 2-pk",
+          "pack": "2 stk",
+          "price": 25,
+          "unit_price": 12.5,
+          "unit": "kr/stk",
+          "chain": "Rema 1000",
+          "discount": null,
+          "member": false,
+          "note": null
+        },
+        {
+          "id": "817a0011000000000000000000000000",
+          "name": "Kaffe 500 g",
+          "pack": null,
+          "price": null,
+          "unit_price": null,
+          "unit": null,
+          "chain": null,
+          "discount": null,
+          "member": false,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "staples-no-deal",
+      "title": "Staples (no deal)",
+      "items": [
+        {
+          "id": "57a90006000000000000000000000000",
+          "name": "Egg",
+          "pack": "12-pk",
+          "price": null,
+          "unit_price": null,
+          "unit": null,
+          "chain": null,
+          "discount": null,
+          "member": false,
+          "note": null
+        },
+        {
+          "id": "57a90007000000000000000000000000",
+          "name": "Grovbrød",
+          "pack": null,
+          "price": null,
+          "unit_price": null,
+          "unit": null,
+          "chain": null,
+          "discount": null,
+          "member": false,
+          "note": null
+        },
+        {
+          "id": "57a90008000000000000000000000000",
+          "name": "Havregryn",
+          "pack": "1 kg",
+          "price": null,
+          "unit_price": null,
+          "unit": null,
+          "chain": null,
+          "discount": null,
+          "member": false,
+          "note": null
+        }
+      ]
+    }
+  ]
+}

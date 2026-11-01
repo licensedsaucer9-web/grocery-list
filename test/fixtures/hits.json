@@ -1,0 +1,975 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "817a000d-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a000d000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Tine Lettmelk 1,5 l",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Tine Lettmelk 1,5 l",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": {
+            "start": "2026-10-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": {
+            "start": "2026-11-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": 24.9
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": 31.1
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": 16.6
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": {
+            "id": "s",
+            "name": "kr/l",
+            "color": "default"
+          }
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "1,5 l",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "1,5 l",
+              "href": null
+            }
+          ]
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": 0.2
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Max 4 per kunde",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Max 4 per kunde",
+              "href": null
+            }
+          ]
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": "https://example.invalid/kiwi-flyer"
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "c4a10001-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "57a90005-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "817a000e-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a000e000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kyllingfilet 1 kg",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kyllingfilet 1 kg",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": null
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": null
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": 99
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": null
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": 99
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": {
+            "id": "s",
+            "name": "kr/kg",
+            "color": "default"
+          }
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "1 kg",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "1 kg",
+              "href": null
+            }
+          ]
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": 0.3
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Coop-medlem",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Coop-medlem",
+              "href": null
+            }
+          ]
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": "https://example.invalid/extra"
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "c4a10003-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "57a9000a-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "817a000f-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a000f000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Bananer",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Bananer",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": null
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": null
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": 19.9
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": null
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": 19.9
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": {
+            "id": "s",
+            "name": "kr/kg",
+            "color": "default"
+          }
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": null
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": null
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "c4a10002-0000-0000-0000-000000000000"
+            },
+            {
+              "id": "c4a10004-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "57a90009-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "817a0010-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a0010000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Avokado 2-pk",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Avokado 2-pk",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": null
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": null
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": 25
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": null
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": 12.5
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": {
+            "id": "s",
+            "name": "kr/stk",
+            "color": "default"
+          }
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "2 stk",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "2 stk",
+              "href": null
+            }
+          ]
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": null
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": null
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "c4a10002-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "817a0011-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a0011000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kaffe 500 g",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kaffe 500 g",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-26",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": null
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": null
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": null
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": null
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": null
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": null
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": null
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": null
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [],
+          "has_more": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "817a0012-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a0012000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Gammel melk-deal",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Gammel melk-deal",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-19",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": null
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": null
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": 19.9
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": null
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": null
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": null
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": null
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": null
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "c4a10001-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "57a90005-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        }
+      }
+    },
+    {
+      "object": "page",
+      "id": "817a0013-0000-0000-0000-000000000000",
+      "created_time": "2026-10-26T07:00:00.000Z",
+      "last_edited_time": "2026-10-26T07:00:00.000Z",
+      "archived": false,
+      "in_trash": false,
+      "url": "https://www.notion.so/817a0013000000000000000000000000",
+      "public_url": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "205832ad-0000-4000-8000-000000000000"
+      },
+      "properties": {
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Gammel egg-deal",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Gammel egg-deal",
+              "href": null
+            }
+          ]
+        },
+        "Week start": {
+          "id": "ws",
+          "type": "date",
+          "date": {
+            "start": "2026-10-19",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Valid from": {
+          "id": "vf",
+          "type": "date",
+          "date": null
+        },
+        "Valid to": {
+          "id": "vt",
+          "type": "date",
+          "date": null
+        },
+        "Price": {
+          "id": "pr",
+          "type": "number",
+          "number": 39.9
+        },
+        "Førpris": {
+          "id": "fp",
+          "type": "number",
+          "number": null
+        },
+        "Unit price": {
+          "id": "up",
+          "type": "number",
+          "number": null
+        },
+        "Unit": {
+          "id": "un",
+          "type": "select",
+          "select": null
+        },
+        "Pack": {
+          "id": "pk",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Discount": {
+          "id": "dc",
+          "type": "number",
+          "number": null
+        },
+        "Deal note": {
+          "id": "dn",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "Member": {
+          "id": "mb",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Source": {
+          "id": "src",
+          "type": "url",
+          "url": null
+        },
+        "Chain": {
+          "id": "ch",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "c4a10004-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        },
+        "Staple": {
+          "id": "sp",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "57a90006-0000-0000-0000-000000000000"
+            }
+          ],
+          "has_more": false
+        }
+      }
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_data_source",
+  "page_or_data_source": {}
+}
