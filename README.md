@@ -10,9 +10,10 @@ Spec: [`docs/plans/grocery-list.md`](docs/plans/grocery-list.md)
 > **PUBLIC DATA WARNING.** This repo is public, so GitHub Pages is public too.
 > `list.json` and the site can be read by anyone with the URL, and the file
 > stays in git history forever. Only grocery names, prices, chains and deal
-> notes go in it. The Notion token, page URLs/ids, `Source` URLs, and the
+> notes go in it. The Notion token, page URLs, `Source` URLs, and the
 > Staples `Notes`/`Aliases` are never exported: the mapper (`sync/map.ts`)
-> emits an explicit allowlist of fields, and a test checks it.
+> emits an explicit allowlist of fields, and a test checks it. Each item's
+> `id` is its Notion page id without dashes, used as a stable key.
 
 ## Data flow
 
@@ -29,12 +30,14 @@ The Notion token only lives in `~/.config/grocery-list/env` on joakimarchy.
 The web app never talks to Notion and contains no secrets.
 
 - **App** (`index.html`, `src/`): Vite + TypeScript, no framework. Grouped
-  sections, tap a row to check it off. Checked items are stored in
-  `localStorage` under `grocery-list:checked:<list_hash>` and reset when the
-  list changes. The refresh button bypasses all caches.
+  sections, tap a row to check it off, tap a section header to collapse it.
+  Checked items are stored in `localStorage` under
+  `grocery-list:checked:<list_hash>` and reset when the list changes;
+  collapsed sections are kept under `grocery-list:collapsed`. The refresh
+  button bypasses all caches.
 - **Offline**: `public/sw.js` precaches the app shell; `list.json` is
   network-first with fallback to the last cached copy. The last good list is
-  also kept in `localStorage`.
+  also kept in `localStorage` (`grocery-list:last`).
 - **Sync** (`scripts/sync.ts`, `sync/`): queries the Weekly hits, Staples and
   Chains databases, keeps the latest `Week start`, groups by staple group,
   and adds active staples without a deal to "Staples (no deal)". `list_hash`
@@ -47,12 +50,14 @@ Needs Node 24+.
 ```sh
 npm install
 npm run dev          # http://localhost:5173/grocery-list/
-npm test             # vitest: mapper, UI state, sync CLI
+npm test             # vitest: mapper, Notion client, UI state, service worker, sync CLI
 npm run build        # type-check, build dist/ and dist-sync/sync.mjs
 npm run sync         # real sync (needs NOTION_TOKEN), writes public/list.json
 npm run sync -- --dry-run   # fetch + map, print JSON, write nothing
 npm run sync:sample  # no token/network: regenerate list.json from test fixtures
 ```
+
+`npm run sync -- --out <path>` writes to another file instead of `public/list.json`.
 
 The service worker only registers in production builds; use
 `npm run build && npm run preview` to test offline behaviour.
@@ -118,8 +123,8 @@ Put these in `~/.config/grocery-list/env` (mode 600):
 
 ### Timer
 
-Runs daily at 08:30 Europe/Oslo with `Persistent=true`, so a missed run
-happens after the machine wakes. Each run: `git pull --ff-only`, sync,
+Runs daily at 08:30 Europe/Oslo (plus up to 60 s random delay) with
+`Persistent=true`, so a missed run happens after the machine wakes. Each run: `git pull --ff-only`, sync,
 commit `chore: sync list (week <date>)` only if `list.json` changed, push.
 A failed push or sync makes the unit fail.
 

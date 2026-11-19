@@ -1,5 +1,7 @@
 # grocery-list implementation plan
 
+> Status: implemented in #3. The [README](../../README.md) describes current behaviour.
+
 Phone-first shopping list PWA. Weekly deals and staples are entered in Notion;
 a local sync job turns them into `public/list.json`; GitHub Pages serves a
 static site that reads it.
